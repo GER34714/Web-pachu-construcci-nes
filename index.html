@@ -8,7 +8,7 @@
 
 <meta name="description" content="J & L Servicios Integrales. Construcción, refacciones, pintura, plomería y trabajos generales. Presupuesto sin cargo.">
 
-<!-- Open Graph -->
+<!-- OG / WhatsApp -->
 <meta property="og:title" content="J & L Servicios Integrales">
 <meta property="og:description" content="Construcción · Refacciones · Pintura · Plomería · Electricidad">
 <meta property="og:image" content="https://iili.io/f7rnYGa.jpg">
@@ -44,23 +44,8 @@ nav{
   align-items:center;
   z-index:1000;
 }
-nav h1{
-  color:#f39c12;
-  margin:0;
-  line-height:1.1;
-}
-nav h1 span{
-  display:block;
-  font-size:14px;
-  font-weight:400;
-}
-nav ul{
-  display:flex;
-  gap:25px;
-  list-style:none;
-  margin:0;
-  padding:0
-}
+nav h1{color:#f39c12;margin:0}
+nav ul{display:flex;gap:25px;list-style:none;margin:0;padding:0}
 nav a{color:#fff;text-decoration:none}
 nav a:hover{color:#f39c12}
 .menu-btn{display:none;font-size:26px;cursor:pointer}
@@ -100,7 +85,7 @@ nav a:hover{color:#f39c12}
 }
 .hero *{position:relative}
 .hero img{max-width:360px;width:90%;margin-bottom:20px}
-.hero p{font-size:18px;margin-bottom:25px}
+.hero p{font-size:18px;margin-bottom:25px;line-height:1.4}
 .btn-main{
   background:#f39c12;
   color:#000;
@@ -108,8 +93,6 @@ nav a:hover{color:#f39c12}
   text-decoration:none;
   font-weight:600;
   border-radius:6px;
-  display:inline-block;
-  margin:8px;
 }
 
 /* SECCIONES */
@@ -135,6 +118,7 @@ h3{color:#f39c12;font-size:28px}
   max-width:1000px;
   margin:40px auto 0;
   overflow:hidden;
+  position:relative;
 }
 .slider-track{
   display:flex;
@@ -156,7 +140,7 @@ footer{
   color:#bbb;
 }
 
-/* WHATSAPP */
+/* WHATSAPP OFICIAL */
 .wsp-btn{
   position:fixed;
   bottom:20px;
@@ -170,6 +154,7 @@ footer{
   justify-content:center;
   box-shadow:0 4px 12px rgba(0,0,0,.4);
   z-index:2000;
+  text-decoration:none;
 }
 .wsp-btn img{
   width:30px;
@@ -181,10 +166,7 @@ footer{
 <body>
 
 <nav>
-  <h1>
-    J & L
-    <span>Servicios Integrales</span>
-  </h1>
+  <h1>J & L</h1>
   <span class="menu-btn" onclick="toggleMenu()">☰</span>
   <ul id="menu">
     <li><a href="#inicio">Inicio</a></li>
@@ -200,15 +182,17 @@ footer{
     Construcción · Refacciones · Pintura · Plomería · Electricidad<br>
     <strong>Presupuesto sin cargo · Atención personalizada · Trabajo garantizado</strong>
   </p>
-  <a class="btn-main" href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">📞 Pedir presupuesto</a>
-  <a class="btn-main" href="https://wa.me/5491171279312?text=Hola%20quisiera%20hacer%20una%20consulta.%20Muchas%20gracias">💬 Consultanos</a>
+  <a class="btn-main"
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+    📞 Pedir presupuesto
+  </a>
 </section>
 
 <section>
   <h3>¿Por qué elegir J & L?</h3>
   <p>
-    Brindamos soluciones reales para tu hogar o negocio, con responsabilidad,
-    prolijidad y compromiso en cada trabajo.
+    Brindamos soluciones reales para tu hogar o negocio.
+    Trabajamos con responsabilidad, prolijidad y compromiso en cada proyecto.
   </p>
   <p>
     ✔ Presupuesto sin cargo<br>
@@ -216,7 +200,10 @@ footer{
     ✔ Atención directa y personalizada<br>
     ✔ Experiencia en trabajos grandes y chicos
   </p>
-  <a class="btn-main" href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto.%20Muchas%20gracias">📲 Pedir presupuesto</a>
+  <a class="btn-main"
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+    📲 Consultanos ahora
+  </a>
 </section>
 
 <section id="servicios">
@@ -228,7 +215,6 @@ footer{
     <div class="card">Plomería</div>
     <div class="card">Electricidad</div>
   </div>
-  <a class="btn-main" href="https://wa.me/5491171279312?text=Hola%20quisiera%20consultar%20por%20sus%20servicios.%20Muchas%20gracias">📞 Consultanos ahora</a>
 </section>
 
 <section id="galeria">
@@ -236,36 +222,67 @@ footer{
   <p>Mirá algunos de los proyectos que realizamos recientemente.</p>
   <div class="slider">
     <div class="slider-track" id="sliderTrack">
-      <img src="https://iili.io/faHGNHP.jpg">
-      <img src="https://iili.io/faHGeOF.jpg">
-      <img src="https://iili.io/faHGhlV.jpg">
-      <img src="https://iili.io/faHGjUB.jpg">
-      <img src="https://iili.io/faHGSWJ.jpg">
-      <img src="https://iili.io/faHG6UN.jpg">
-      <img src="https://iili.io/faHGtxs.jpg">
-      <img src="https://iili.io/faHGbsf.jpg">
-      <img src="https://iili.io/faHGy0l.jpg">
-      <img src="https://iili.io/faHM9g2.jpg">
-      <img src="https://iili.io/faHM2e9.jpg">
-      <img src="https://iili.io/faHM3be.jpg">
-      <img src="https://iili.io/faHMfWb.jpg">
+      <img loading="lazy" src="https://iili.io/faHGNHP.jpg">
+      <img loading="lazy" src="https://iili.io/faHGeOF.jpg">
+      <img loading="lazy" src="https://iili.io/faHGhlV.jpg">
+      <img loading="lazy" src="https://iili.io/faHGjUB.jpg">
+      <img loading="lazy" src="https://iili.io/faHGSWJ.jpg">
+      <img loading="lazy" src="https://iili.io/faHG6UN.jpg">
+      <img loading="lazy" src="https://iili.io/faHGtxs.jpg">
+      <img loading="lazy" src="https://iili.io/faHGbsf.jpg">
+      <img loading="lazy" src="https://iili.io/faHGy0l.jpg">
+      <img loading="lazy" src="https://iili.io/faHM9g2.jpg">
+      <img loading="lazy" src="https://iili.io/faHM2e9.jpg">
+      <img loading="lazy" src="https://iili.io/faHM3be.jpg">
+      <img loading="lazy" src="https://iili.io/faHMfWb.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIxiF.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIuUJ.jpg">
+      <img loading="lazy" src="https://iili.io/f7rITla.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIRHv.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI7Np.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIcxI.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIlVt.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI0iX.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIMUG.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIWJf.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIhOl.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIjb2.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI80u.jpg">
+      <img loading="lazy" src="https://iili.io/f7rISUb.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIr5x.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI4OQ.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI6bV.jpg">
     </div>
   </div>
+  <a class="btn-main"
+     style="margin-top:30px;display:inline-block"
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+    📲 Consultanos ahora
+  </a>
 </section>
 
 <section id="contacto">
   <h3>Contacto</h3>
   <p>
-    ¿Tenés una obra o refacción pendiente?<br>
+    ¿Tenés una obra, refacción o arreglo pendiente?<br>
     Escribinos y te pasamos presupuesto sin cargo.
   </p>
-  <a class="btn-main" href="https://wa.me/5491171279312?text=Hola%20quisiera%20contactarlos.%20Muchas%20gracias">💬 Escribinos ahora</a>
+  <p>
+    <a style="color:#f39c12"
+       href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+       Enviar WhatsApp
+    </a>
+  </p>
+  <p style="margin-top:40px">
+    <strong>Cada trabajo lo hacemos como si fuera en nuestra propia casa.</strong>
+  </p>
 </section>
 
 <footer>© 2025 · J & L Servicios Integrales</footer>
 
 <a class="wsp-btn"
-   href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+   href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias"
+   aria-label="WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
