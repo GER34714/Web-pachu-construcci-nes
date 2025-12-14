@@ -8,24 +8,39 @@
 
 <meta name="description" content="J & L Servicios Integrales. Construcción, refacciones, pintura, plomería y trabajos generales. Presupuesto sin cargo.">
 
-<!-- OG -->
+<!-- Open Graph -->
 <meta property="og:title" content="J & L Servicios Integrales">
 <meta property="og:description" content="Construcción · Refacciones · Pintura · Plomería · Electricidad">
 <meta property="og:image" content="https://iili.io/f7rnYGa.jpg">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://tusitio.com">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="J & L Servicios Integrales">
+<meta name="twitter:description" content="Servicios integrales de construcción y refacción">
+<meta name="twitter:image" content="https://iili.io/f7rnYGa.jpg">
 
 <link rel="icon" href="https://iili.io/JKF6M1S.png">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
+/* BASE */
 body{
+  margin:0;
   font-family:Poppins,Arial,sans-serif;
   transition:background .3s,color .3s;
 }
+*{box-sizing:border-box}
 
-/* MODOS */
-body.light{background:#f4f4f4;color:#111}
-body.dark{background:#111;color:#fff}
+/* ===== MODOS ===== */
+body.dark{
+  background:#111;
+  color:#fff;
+}
+body.light{
+  background:#f4f4f4;
+  color:#111;
+}
 
 /* NAV */
 nav{
@@ -38,11 +53,12 @@ nav{
   align-items:center;
   z-index:1000;
 }
-body.light nav{background:#fff}
 body.dark nav{background:#000}
+body.light nav{background:#fff}
 
 nav h1{
   color:#f39c12;
+  margin:0;
   font-size:22px;
   line-height:1.1;
 }
@@ -51,13 +67,19 @@ nav h1 span{
   font-size:12px;
   font-weight:400;
 }
-body.light nav h1 span{color:#666}
 body.dark nav h1 span{color:#ddd}
+body.light nav h1 span{color:#555}
 
-nav ul{display:flex;gap:25px;list-style:none}
-nav a{text-decoration:none}
-body.light nav a{color:#111}
+nav ul{
+  display:flex;
+  gap:25px;
+  list-style:none;
+  margin:0;
+  padding:0
+}
 body.dark nav a{color:#fff}
+body.light nav a{color:#111}
+nav a{text-decoration:none}
 nav a:hover{color:#f39c12}
 
 .menu-btn{display:none;font-size:26px;cursor:pointer}
@@ -66,14 +88,14 @@ nav a:hover{color:#f39c12}
   nav ul{
     display:none;
     position:absolute;
-    top:65px;left:0;
+    top:70px;left:0;
     width:100%;
     flex-direction:column;
     text-align:center;
     padding:20px 0;
   }
-  body.light nav ul{background:#fff}
   body.dark nav ul{background:#000}
+  body.light nav ul{background:#fff}
   nav ul.show{display:flex}
   .menu-btn{display:block}
 }
@@ -87,14 +109,14 @@ nav a:hover{color:#f39c12}
   justify-content:center;
   align-items:center;
   text-align:center;
-  padding:20px;
   position:relative;
+  padding:20px;
 }
 .hero::before{
   content:"";
   position:absolute;
   inset:0;
-  background:rgba(0,0,0,.55);
+  background:rgba(0,0,0,.65);
 }
 .hero *{position:relative}
 .hero img{max-width:360px;width:90%;margin-bottom:20px}
@@ -107,12 +129,11 @@ nav a:hover{color:#f39c12}
   text-decoration:none;
   font-weight:600;
   border-radius:6px;
-  display:inline-block;
 }
 
 /* SECCIONES */
 section{padding:70px 20px;text-align:center}
-h3{color:#f39c12;font-size:28px;margin-bottom:15px}
+h3{color:#f39c12;font-size:28px}
 
 /* SERVICIOS */
 .servicios{
@@ -125,48 +146,70 @@ h3{color:#f39c12;font-size:28px;margin-bottom:15px}
   padding:25px;
   border-radius:10px;
 }
-body.light .card{background:#fff;border:1px solid #ddd}
-body.dark .card{background:#1c1c1c;border:1px solid #333}
+body.dark .card{
+  background:#1c1c1c;
+  border:1px solid #333;
+}
+body.light .card{
+  background:#fff;
+  border:1px solid #ddd;
+}
 
 /* SLIDER */
-.slider{max-width:1000px;margin:40px auto 0;overflow:hidden}
-.slider-track{display:flex;transition:transform .6s ease}
+.slider{
+  max-width:1000px;
+  margin:40px auto 0;
+  overflow:hidden;
+}
+.slider-track{
+  display:flex;
+  transition:transform .6s ease;
+}
 .slider img{
   width:100%;
   flex-shrink:0;
+  border-radius:10px;
   height:220px;
   object-fit:cover;
-  border-radius:10px;
 }
 
 /* FOOTER */
 footer{
   padding:20px;
-  text-align:center;
   font-size:14px;
 }
-body.light footer{background:#fff;color:#555}
 body.dark footer{background:#000;color:#bbb}
+body.light footer{background:#fff;color:#555}
 
 /* WHATSAPP */
 .wsp-btn{
   position:fixed;
-  bottom:20px;right:20px;
-  width:56px;height:56px;
+  bottom:20px;
+  right:20px;
+  width:56px;
+  height:56px;
   background:#25D366;
   border-radius:50%;
   display:flex;
   align-items:center;
   justify-content:center;
+  box-shadow:0 4px 12px rgba(0,0,0,.4);
+  z-index:2000;
 }
-.wsp-btn img{width:30px}
+.wsp-btn img{
+  width:30px;
+  height:30px;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <h1>J & L <span>Servicios Integrales</span></h1>
+  <h1>
+    J & L
+    <span>Servicios Integrales</span>
+  </h1>
   <span class="menu-btn" onclick="toggleMenu()">☰</span>
   <ul id="menu">
     <li><a href="#inicio">Inicio</a></li>
@@ -177,18 +220,29 @@ body.dark footer{background:#000;color:#bbb}
 </nav>
 
 <section class="hero" id="inicio">
-  <img src="https://iili.io/fa9gxK7.png">
+  <img src="https://iili.io/fa9gxK7.png" alt="J & L Servicios Integrales">
   <p>
     Construcción · Refacciones · Pintura · Plomería · Electricidad<br>
-    <strong>Presupuesto sin cargo · Trabajo garantizado</strong>
+    <strong>Presupuesto sin cargo · Atención personalizada · Trabajo garantizado</strong>
   </p>
-  <a class="btn-main" href="https://wa.me/5491171279312">📞 Pedir presupuesto</a>
+  <a class="btn-main"
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+    📞 Pedir presupuesto
+  </a>
 </section>
 
 <section>
   <h3>¿Por qué elegir J & L?</h3>
-  <p>Responsabilidad, prolijidad y compromiso en cada trabajo.</p>
-  <a class="btn-main" href="https://wa.me/5491171279312">📲 Consultanos ahora</a>
+  <p>
+    Brindamos soluciones reales para tu hogar o negocio.
+    Trabajamos con responsabilidad, prolijidad y compromiso en cada proyecto.
+  </p>
+  <p>
+    ✔ Presupuesto sin cargo<br>
+    ✔ Cumplimos los tiempos acordados<br>
+    ✔ Atención directa y personalizada<br>
+    ✔ Experiencia en trabajos grandes y chicos
+  </p>
 </section>
 
 <section id="servicios">
@@ -203,7 +257,8 @@ body.dark footer{background:#000;color:#bbb}
 </section>
 
 <section id="galeria">
-  <h3>Trabajos reales</h3>
+  <h3>Trabajos reales, clientes reales</h3>
+  <p>Mirá algunos de los proyectos que realizamos recientemente.</p>
   <div class="slider">
     <div class="slider-track" id="sliderTrack">
       <img src="https://iili.io/faHGNHP.jpg">
@@ -221,27 +276,28 @@ body.dark footer{background:#000;color:#bbb}
       <img src="https://iili.io/faHMfWb.jpg">
     </div>
   </div>
-  <a class="btn-main" style="margin-top:30px" href="https://wa.me/5491171279312">
-    📲 Pedir presupuesto
-  </a>
 </section>
 
 <section id="contacto">
   <h3>Contacto</h3>
-  <p>Escribinos y te pasamos presupuesto sin cargo.</p>
+  <p>
+    ¿Tenés una obra, refacción o arreglo pendiente?<br>
+    Escribinos y te pasamos presupuesto sin cargo.
+  </p>
 </section>
 
 <footer>© 2025 · J & L Servicios Integrales</footer>
 
-<a class="wsp-btn" href="https://wa.me/5491171279312">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+<a class="wsp-btn"
+   href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
 <script>
-/* MODO AUTOMÁTICO */
+/* MODO AUTOMÁTICO POR HORA */
 (function(){
-  const h=new Date().getHours();
-  document.body.classList.add(h>=7&&h<19?"light":"dark");
+  const h = new Date().getHours();
+  document.body.classList.add(h >= 7 && h < 19 ? "light" : "dark");
 })();
 
 /* MENU */
@@ -250,9 +306,14 @@ function toggleMenu(){
 }
 
 /* SLIDER */
-let i=0;
-const t=document.getElementById("sliderTrack");
-setInterval(()=>{i=(i+1)%t.children.length;t.style.transform=`translateX(-${i*100}%)`},3500);
+let index=0;
+const track=document.getElementById("sliderTrack");
+const slides=track.children.length;
+
+setInterval(()=>{
+  index=(index+1)%slides;
+  track.style.transform=`translateX(-${index*100}%)`;
+},3500);
 </script>
 
 </body>
