@@ -177,9 +177,46 @@ body.light .card{
 footer{
   padding:20px;
   font-size:14px;
+  text-align:center;
 }
 body.dark footer{background:#000;color:#bbb}
 body.light footer{background:#fff;color:#555}
+
+/* === AGREGADO CIBORG 347 === */
+.footer-credit{
+  margin-top:10px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+}
+.footer-credit a{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  text-decoration:none;
+  font-weight:600;
+}
+body.dark .footer-credit a{color:#00ffff}
+body.light .footer-credit a{color:#333}
+
+.footer-credit img{
+  width:18px;
+  height:18px;
+}
+
+.recomendar-btn{
+  margin-top:12px;
+  display:inline-block;
+  padding:8px 16px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:600;
+  text-decoration:none;
+  border:1px solid currentColor;
+}
+body.dark .recomendar-btn{color:#00ffff}
+body.light .recomendar-btn{color:#333}
 
 /* WHATSAPP */
 .wsp-btn{
@@ -286,7 +323,23 @@ body.light footer{background:#fff;color:#555}
   </p>
 </section>
 
-<footer>© 2025 · J & L Servicios Integrales</footer>
+<footer>
+  © 2025 · J & L Servicios Integrales
+
+  <!-- AGREGADO -->
+  <div class="footer-credit">
+    <a href="https://ciborg347.onrender.com" target="_blank" rel="noopener">
+      <img src="https://iili.io/faV8OcN.png" alt="Ciborg 347">
+      Creado y diseñado por Ciborg 347
+    </a>
+  </div>
+
+  <a class="recomendar-btn"
+     href="https://wa.me/?text=Te%20recomiendo%20este%20sitio:%20https://tusitio.com"
+     target="_blank">
+    👍 RECOMENDANOS
+  </a>
+</footer>
 
 <a class="wsp-btn"
    href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
