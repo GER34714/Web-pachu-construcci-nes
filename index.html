@@ -24,7 +24,6 @@
 <link rel="icon" href="https://iili.io/JKF6M1S.png">
 
 <style>
-/* BASE */
 body{
   margin:0;
   font-family:Poppins,Arial,sans-serif;
@@ -32,7 +31,6 @@ body{
 }
 *{box-sizing:border-box}
 
-/* ===== MODOS ===== */
 body.dark{background:#111;color:#fff}
 body.light{background:#f4f4f4;color:#111}
 
@@ -71,9 +69,9 @@ nav ul{
   margin:0;
   padding:0
 }
+nav a{text-decoration:none}
 body.dark nav a{color:#fff}
 body.light nav a{color:#111}
-nav a{text-decoration:none}
 nav a:hover{color:#f39c12}
 
 .menu-btn{display:none;font-size:26px;cursor:pointer}
@@ -123,6 +121,7 @@ nav a:hover{color:#f39c12}
   text-decoration:none;
   font-weight:600;
   border-radius:6px;
+  display:inline-block;
 }
 
 /* SECCIONES */
@@ -161,28 +160,27 @@ body.light .card{background:#fff;border:1px solid #ddd}
   object-fit:cover;
 }
 
+/* CTA FINAL */
+.cta-final{
+  padding:50px 20px;
+  text-align:center;
+}
+.cta-final a{margin:10px}
+
 /* FOOTER */
 footer{
-  padding:0;
+  padding:20px;
   font-size:14px;
   text-align:center;
 }
 body.dark footer{background:#000;color:#bbb}
 body.light footer{background:#fff;color:#555}
 
-.footer-top{
-  padding:20px;
-}
-
-.footer-brand{
-  display:block;
-  padding:14px 10px;
+footer a{
+  color:#f39c12;
   text-decoration:none;
-  font-weight:700;
-  letter-spacing:1px;
+  font-weight:600;
 }
-body.dark .footer-brand{color:#00ffff;background:#000}
-body.light .footer-brand{color:#333;background:#f0f0f0}
 
 /* WHATSAPP */
 .wsp-btn{
@@ -199,17 +197,14 @@ body.light .footer-brand{color:#333;background:#f0f0f0}
   box-shadow:0 4px 12px rgba(0,0,0,.4);
   z-index:2000;
 }
-.wsp-btn img{width:30px;height:30px}
+.wsp-btn img{width:30px}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <h1>
-    J & L
-    <span>Servicios Integrales</span>
-  </h1>
+  <h1>J & L <span>Servicios Integrales</span></h1>
   <span class="menu-btn" onclick="toggleMenu()">☰</span>
   <ul id="menu">
     <li><a href="#inicio">Inicio</a></li>
@@ -286,26 +281,34 @@ body.light .footer-brand{color:#333;background:#f0f0f0}
   </p>
 </section>
 
+<section class="cta-final">
+  <a class="btn-main"
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+    📞 Pedir presupuesto
+  </a>
+  <a class="btn-main"
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+    💬 Consultar ahora
+  </a>
+</section>
+
 <footer>
-  <div class="footer-top">
-    © 2025 · J & L Servicios Integrales
-  </div>
-  <a class="footer-brand"
-     href="https://ciborg347.onrender.com"
-     target="_blank" rel="noopener">
-    CREADO Y DISEÑADO POR CIBORG 347
+  © 2025 · J & L Servicios Integrales<br>
+  Creado y diseñado por
+  <a href="https://ciborg347.onrender.com" target="_blank" rel="noopener">
+    CIBORG347
   </a>
 </footer>
 
 <a class="wsp-btn"
-   href="https://wa.me/5491171279312">
+   href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
 <script>
 (function(){
-  const h = new Date().getHours();
-  document.body.classList.add(h >= 7 && h < 19 ? "light" : "dark");
+  const h=new Date().getHours();
+  document.body.classList.add(h>=7&&h<19?"light":"dark");
 })();
 
 function toggleMenu(){
