@@ -31,6 +31,7 @@ body{
 }
 *{box-sizing:border-box}
 
+/* ===== MODOS AUTO ===== */
 body.dark{background:#111;color:#fff}
 body.light{background:#f4f4f4;color:#111}
 
@@ -73,7 +74,6 @@ nav a{text-decoration:none}
 body.dark nav a{color:#fff}
 body.light nav a{color:#111}
 nav a:hover{color:#f39c12}
-
 .menu-btn{display:none;font-size:26px;cursor:pointer}
 
 @media(max-width:768px){
@@ -113,7 +113,6 @@ nav a:hover{color:#f39c12}
 .hero *{position:relative}
 .hero img{max-width:360px;width:90%;margin-bottom:20px}
 .hero p{font-size:18px;margin-bottom:25px;line-height:1.4;color:#fff}
-
 .btn-main{
   background:#f39c12;
   color:#000;
@@ -147,6 +146,7 @@ body.light .card{background:#fff;border:1px solid #ddd}
   max-width:1000px;
   margin:40px auto 0;
   overflow:hidden;
+  position:relative;
 }
 .slider-track{
   display:flex;
@@ -160,22 +160,31 @@ body.light .card{background:#fff;border:1px solid #ddd}
   object-fit:cover;
 }
 
-/* CTA FINAL */
+/* CTA FINAL (SIN ESPACIO MUERTO) */
 .cta-final{
-  padding:50px 20px;
+  padding:25px 20px;          /* menos alto */
   text-align:center;
 }
-.cta-final a{margin:10px}
+.cta-final a{
+  margin:6px 6px;             /* juntitos */
+}
+@media(max-width:480px){
+  .cta-final a{
+    display:block;
+    width:100%;
+    max-width:360px;
+    margin:8px auto;          /* ordenado en mobile */
+  }
+}
 
 /* FOOTER */
 footer{
-  padding:20px;
+  padding:18px;
   font-size:14px;
   text-align:center;
 }
 body.dark footer{background:#000;color:#bbb}
 body.light footer{background:#fff;color:#555}
-
 footer a{
   color:#f39c12;
   text-decoration:none;
@@ -196,15 +205,22 @@ footer a{
   justify-content:center;
   box-shadow:0 4px 12px rgba(0,0,0,.4);
   z-index:2000;
+  text-decoration:none;
 }
-.wsp-btn img{width:30px}
+.wsp-btn img{
+  width:30px;
+  height:30px;
+}
 </style>
 </head>
 
 <body>
 
 <nav>
-  <h1>J & L <span>Servicios Integrales</span></h1>
+  <h1>
+    J & L
+    <span>Servicios Integrales</span>
+  </h1>
   <span class="menu-btn" onclick="toggleMenu()">☰</span>
   <ul id="menu">
     <li><a href="#inicio">Inicio</a></li>
@@ -256,19 +272,37 @@ footer a{
   <p>Mirá algunos de los proyectos que realizamos recientemente.</p>
   <div class="slider">
     <div class="slider-track" id="sliderTrack">
-      <img src="https://iili.io/faHGNHP.jpg">
-      <img src="https://iili.io/faHGeOF.jpg">
-      <img src="https://iili.io/faHGhlV.jpg">
-      <img src="https://iili.io/faHGjUB.jpg">
-      <img src="https://iili.io/faHGSWJ.jpg">
-      <img src="https://iili.io/faHG6UN.jpg">
-      <img src="https://iili.io/faHGtxs.jpg">
-      <img src="https://iili.io/faHGbsf.jpg">
-      <img src="https://iili.io/faHGy0l.jpg">
-      <img src="https://iili.io/faHM9g2.jpg">
-      <img src="https://iili.io/faHM2e9.jpg">
-      <img src="https://iili.io/faHM3be.jpg">
-      <img src="https://iili.io/faHMfWb.jpg">
+      <img loading="lazy" src="https://iili.io/faHGNHP.jpg">
+      <img loading="lazy" src="https://iili.io/faHGeOF.jpg">
+      <img loading="lazy" src="https://iili.io/faHGhlV.jpg">
+      <img loading="lazy" src="https://iili.io/faHGjUB.jpg">
+      <img loading="lazy" src="https://iili.io/faHGSWJ.jpg">
+      <img loading="lazy" src="https://iili.io/faHG6UN.jpg">
+      <img loading="lazy" src="https://iili.io/faHGtxs.jpg">
+      <img loading="lazy" src="https://iili.io/faHGbsf.jpg">
+      <img loading="lazy" src="https://iili.io/faHGy0l.jpg">
+      <img loading="lazy" src="https://iili.io/faHM9g2.jpg">
+      <img loading="lazy" src="https://iili.io/faHM2e9.jpg">
+      <img loading="lazy" src="https://iili.io/faHM3be.jpg">
+      <img loading="lazy" src="https://iili.io/faHMfWb.jpg">
+
+      <img loading="lazy" src="https://iili.io/f7rIxiF.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIuUJ.jpg">
+      <img loading="lazy" src="https://iili.io/f7rITla.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIRHv.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI7Np.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIcxI.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIlVt.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI0iX.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIMUG.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIWJf.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIhOl.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIjb2.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI80u.jpg">
+      <img loading="lazy" src="https://iili.io/f7rISUb.jpg">
+      <img loading="lazy" src="https://iili.io/f7rIr5x.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI4OQ.jpg">
+      <img loading="lazy" src="https://iili.io/f7rI6bV.jpg">
     </div>
   </div>
 </section>
@@ -281,40 +315,42 @@ footer a{
   </p>
 </section>
 
+<!-- CTA FINAL (JUNTITOS, SIN ESPACIO MUERTO) -->
 <section class="cta-final">
   <a class="btn-main"
      href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
     📞 Pedir presupuesto
   </a>
   <a class="btn-main"
-     href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+     href="https://wa.me/5491171279312?text=Hola%20quisiera%20hacer%20una%20consulta%20por%20sus%20servicios.">
     💬 Consultar ahora
   </a>
 </section>
 
 <footer>
-  © 2025 · J & L Servicios Integrales<br>
-  Creado y diseñado por
   <a href="https://ciborg347.onrender.com" target="_blank" rel="noopener">
-    CIBORG347
+    Creado y diseñado por CIBORG347
   </a>
 </footer>
 
 <a class="wsp-btn"
-   href="https://wa.me/5491171279312?text=Hola%20quisiera%20pedir%20un%20presupuesto%20para%20realizar%20un%20trabajo.%20Muchas%20gracias">
+   href="https://wa.me/5491171279312?text=Hola%20quisiera%20hacer%20una%20consulta%20por%20sus%20servicios."
+   aria-label="WhatsApp">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>
 
 <script>
+/* MODO AUTOMÁTICO POR HORA */
 (function(){
-  const h=new Date().getHours();
-  document.body.classList.add(h>=7&&h<19?"light":"dark");
+  const h = new Date().getHours();
+  document.body.classList.add(h >= 7 && h < 19 ? "light" : "dark");
 })();
 
 function toggleMenu(){
   document.getElementById("menu").classList.toggle("show");
 }
 
+/* SLIDER */
 let index=0;
 const track=document.getElementById("sliderTrack");
 const slides=track.children.length;
