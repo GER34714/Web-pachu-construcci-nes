@@ -163,19 +163,26 @@ body.light .card{background:#fff;border:1px solid #ddd}
 
 /* FOOTER */
 footer{
-  padding:20px;
+  padding:0;
   font-size:14px;
   text-align:center;
 }
 body.dark footer{background:#000;color:#bbb}
 body.light footer{background:#fff;color:#555}
 
-.footer-credit a{
-  text-decoration:none;
-  font-weight:600;
+.footer-top{
+  padding:20px;
 }
-body.dark .footer-credit a{color:#00ffff}
-body.light .footer-credit a{color:#333}
+
+.footer-brand{
+  display:block;
+  padding:14px 10px;
+  text-decoration:none;
+  font-weight:700;
+  letter-spacing:1px;
+}
+body.dark .footer-brand{color:#00ffff;background:#000}
+body.light .footer-brand{color:#333;background:#f0f0f0}
 
 /* WHATSAPP */
 .wsp-btn{
@@ -277,20 +284,17 @@ body.light .footer-credit a{color:#333}
     ¿Tenés una obra, refacción o arreglo pendiente?<br>
     Escribinos y te pasamos presupuesto sin cargo.
   </p>
-
-  <p>
-    📞 <a href="tel:+5491171279312">+54 9 11 7127-9312</a><br>
-    💬 <a href="https://wa.me/5491171279312" target="_blank">Escribinos por WhatsApp</a>
-  </p>
 </section>
 
 <footer>
-  © 2025 · J & L Servicios Integrales
-  <div class="footer-credit">
-    <a href="https://ciborg347.onrender.com" target="_blank" rel="noopener">
-      Creado y diseñado por Ciborg 347
-    </a>
+  <div class="footer-top">
+    © 2025 · J & L Servicios Integrales
   </div>
+  <a class="footer-brand"
+     href="https://ciborg347.onrender.com"
+     target="_blank" rel="noopener">
+    CREADO Y DISEÑADO POR CIBORG 347
+  </a>
 </footer>
 
 <a class="wsp-btn"
